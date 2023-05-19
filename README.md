@@ -1,8 +1,15 @@
 # Node HA API
-REST API for Home Assistant to get the state of an entity.
+REST API for Home Assistant to easily get the state of an entity.
 
-## Usage
-
+## Table of Contents
+- [Node HA API](#node-ha-api)
+  - [Table of Contents](#table-of-contents)
+  - [Installation](#installation)
+    - [Docker Compose](#docker-compose)
+  - [Usage](#usage)
+  - [Configuration](#configuration)
+    - [Environment Variables](#environment-variables)
+## Installation
 ### Docker Compose
 ```yaml
 version: "3.7"
@@ -18,6 +25,17 @@ services:
       - API_URL=localhost
       - API_KEY=long-lived-access-token
       - ENTITY_ID=light.living_room
+```
+## Usage
+Ask the API to get the state of the entity.
+```bash
+curl -X GET http://localhost:8080
+```
+Give the response
+```json
+{
+  "number": 0.123
+}
 ```
 ## Configuration
 <!-- Environment Variables Table -->
