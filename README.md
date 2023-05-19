@@ -1,4 +1,5 @@
 # Node HA API
+[![Docker Image CI](https://github.com/amatheo/nodehaapi/actions/workflows/docker-image.yml/badge.svg)](https://github.com/amatheo/nodehaapi/actions/workflows/docker-image.yml)\
 REST API for Home Assistant to easily get the state of an entity.
 
 ## Table of Contents
